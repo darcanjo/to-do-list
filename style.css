@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+
+body {
+  background: url("./imagens/background.png");
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container {
+  background-color: #d1d1d1;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+.input-task {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 27px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.botao-task {
+  border: none;
+  border-radius: 5px;
+  height: 27px;
+  background-color: #003329;
+  color: #fff;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.botao-task:hover {
+  opacity: 0.8;
+}
+
+.botao-task:active {
+  opacity: 0.6;
+}
+
+.lista-task {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.linha-task {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.linha-task:hover img {
+  opacity: 1;
+}
+
+.done{
+  background-color: #8fac55;
+  text-decoration: line-through;
+}
